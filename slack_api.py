@@ -5,6 +5,7 @@ slack_api_token_base64= "eG94cC04NTQzMDMxNDIwNTUtODU0MzAzMTQyOTUxLTg1NTM1MzgwNzA
 slack_api_token= base64.b64decode(slack_api_token_base64)
 slack = Slacker(slack_api_token)
 #something try now
+#sbsbs
 if slack.api.test().successful:
     print(
         f"Connected to {slack.team.info().body['team']['name']}.")
