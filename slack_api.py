@@ -9,7 +9,7 @@ if slack.api.test().successful:
     print(
         f"Connected to {slack.team.info().body['team']['name']}.")
 else:
-    #swapneil swapneil
+    #swapneil swapneil abcd
     print('Try Again!')
 
 r = slack.channels.list()
